@@ -1,0 +1,447 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+
+} 
+/* generl */ 
+ul 
+{
+    list-style:none ;
+}
+/* header */ 
+header
+{
+    overflow: hidden;
+}
+nav 
+{
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 100;
+}
+.nav 
+{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+.navbar-light .navbar-nav .nav-link
+{
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color:rgba(255, 255, 255, 0.904);
+
+}
+ul.navbar-nav.mr-auto
+{
+    margin: 0 auto;
+}
+
+.w 
+{
+    position: relative;
+}
+.w::before
+{
+    position: absolute;
+    content: "";
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: scale3d(1,0,1);
+    transition: transform 1s ease;
+}
+.w:hover::before
+{
+    transform: scale3d(1,1,1);
+}
+.w::after
+{
+    position: absolute;
+    content: "";
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: scale3d(0,1,1);
+    transition: transform 1s ease .6s;
+}
+.w:hover:after
+{
+    transform: scale3d(1,1,1);
+}
+/* main */ 
+#main
+{
+    margin-top: 61px;
+    overflow: hidden;
+}
+.d
+{
+    margin: 20px 0;
+}
+.left
+{
+    margin: 33px 0;
+}
+ .left img 
+{
+    width: 96%;
+    margin-top: 39px;
+    transform: skew(1deg,6deg) rotateX(7deg);
+}
+.honda h1 
+{
+    text-transform: capitalize;
+    text-align: center;
+    position: relative;
+}
+.honda h1::after
+{
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: black;
+    height: 3px;
+    right: -50%;
+    left: 39%;
+    bottom: 0;
+    width: 20%;
+}
+.des-honda
+{
+    margin-top: 20px;
+    font-size: 19px;
+}
+.second-p
+{
+    font-style: italic;
+    font-size: 17px;
+}
+/* button */ 
+.butt
+{
+    text-align: center;
+}
+.butt button 
+{
+    text-transform: capitalize;
+    width: 205px;
+    height: 44px;
+    background-color: #dc3545;
+    border: 2px solid;
+    border-radius: 4px;
+    font-size: 20px;
+    position: relative;
+    color: #eee;
+}
+.butt button:hover
+{
+    opacity: 0.9;
+}
+.butt button.button-black
+{
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+}
+.button-content 
+{
+    
+    color: #eee;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 7px;
+    box-shadow: 0px 4px 10px 7px #e8e8e8 ;
+}
+.button-content span
+{
+    color:rgb(0, 0, 0) ;
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 19px;
+}
+
+/* serivce */ 
+#service
+{
+    height: auto;
+    overflow: hidden;
+}
+.header-section 
+{
+    text-align: center;
+    padding-top: 20px;
+    text-transform: capitalize;
+}
+h1
+{
+    position: relative;
+}
+.header-section h1::after
+{
+    content: "";
+    position: absolute;
+    border-bottom: solid 3px rgb(204, 0, 0);
+    display: block;
+    width: 4%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin:-3px auto;
+    transition: ease 1s width;
+}
+.header-section h1:hover:after
+{
+    width: 100%;
+}
+.service-content h2 
+{
+    text-transform: capitalize;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    padding-top: 12px;
+}
+.service-content
+{
+    text-align: center;
+    border: 1px solid black;
+    margin: 6px 47px;
+    transition: box-shadow 1s ease;
+}
+.service-content:hover 
+{
+    box-shadow: 0px 0px 13px -3px #dc3545;
+}
+.sec 
+{
+    background: -webkit-linear-gradient(top left,rgba(0,0,0,1),rgb(48, 47, 47));
+    position: relative;
+    color: #fff;
+}
+.sec:hover .icon i 
+{
+    visibility: visible;
+    opacity: 1;
+} 
+.icon 
+{
+    position: absolute;
+    top: 0;
+    right:  0;
+}
+.sec .icon i 
+{
+    display: block; 
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    line-height: 40px;
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+    transition: ease .5s;
+}
+.sec .icon .fb i:hover
+{
+    color: rgba(86,101,212);
+}
+.sec .icon .insta i:hover
+{
+    COLOR: #E1306C;
+}
+.sec .icon .skype i:hover
+{
+    color:  #00AFF0;
+}
+.sec .icon .twitter i:hover 
+{
+    color: #1da1f2;
+}
+.last 
+{
+    margin: 23px 315px;
+}
+/* contact */ 
+#contact
+{
+    width: 100%;
+    text-align: center;
+}
+.contatct-link
+{
+    position: relative;
+}
+.con
+{
+    background-color: rgb(26, 24, 24);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.contatct-link
+{
+    color: #eee; 
+    text-align: center;
+}
+.contatct-link .list-2 
+{
+    position: absolute;
+    top: 50%;
+    transform: translate(62%,26%);
+}
+
+.list-2 li a 
+{
+    color:rgb(204, 0, 0);
+    text-transform: capitalize;
+}
+.contatct-link i 
+{
+    display: block;
+}
+.contatct-link i a 
+{
+    color:rgb(204, 0, 0);
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.contatct-link .yahoo i 
+{
+    color: #7900b0;
+}
+.contatct-link .gmail i 
+{
+    color: #4285F4;
+}
+.us
+{
+    margin: 10px 0;
+}
+.contact-header
+{
+    margin: 20px 20px;
+}
+/* footer */ 
+footer
+{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */ 
+@media screen and (max-width:986px)
+{
+    #main
+    {
+        margin-top: 3px;
+    }
+    .honda
+    {
+        margin-top: 12px;
+        padding: 10px;
+    }
+    .honda h1
+    {
+        font-size: 32px;
+    }
+    .des-honda p
+    {
+        font-size: 15px;
+        text-align: center;
+    }
+    .left img 
+    {
+    width: 96%;
+    margin-top: 39px;
+    }
+    .service-content
+    {
+        margin: 0px;
+    }
+    .parent-service
+    {
+        margin: 10px 0;
+    }
+    .header-section
+    {
+        margin: 8px 0;
+    }
+    .header-section h1::after
+    {
+        width: 50%;
+    }
+    .header-section h1:hover:after
+    {
+        width: 30%;
+    }
+    .con
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .contatct-link .list-2 
+    {
+        position: relative;
+        top: -15px;
+        right: 66%;
+        
+    }
+    h2 
+    {
+        margin: 10px 0;
+    }
+    .us
+    {
+         margin: 20px 0;
+    }
+    .d
+    {
+        margin: 0 0;
+    }
+}
